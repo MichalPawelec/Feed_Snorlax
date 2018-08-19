@@ -1,7 +1,6 @@
 # Feed_Snorlax
 
-> Improved version of my first simple JavaScript game (Furry_Game)
-> Feed_Snorlax is my second simple JaveScript game.
+> Improved version of my first simple JavaScript game (Furry_Game).
 
 ## How to play?
 * Use keyboard arrows to direct Snorlax.

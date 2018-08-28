@@ -60,8 +60,7 @@ body {
   background-size: cover;
 }
 
-.machamp {
-  background-image: url('../images/machamp.png');
+.opponent {
   background-repeat: no-repeat;
   background-size: cover;
 }

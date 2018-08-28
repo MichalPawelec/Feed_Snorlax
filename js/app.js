@@ -4,7 +4,7 @@ const newGame = new Game();
 newGame.showSnorlax();
 newGame.showOrange();
 newGame.showApple();
-newGame.showMachamp();
+newGame.showOpponent();
 newGame.startGame();
 
 document.addEventListener("keydown", function(event) {

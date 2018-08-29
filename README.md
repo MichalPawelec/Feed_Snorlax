@@ -6,7 +6,7 @@
 * Use keyboard arrows to direct Snorlax.
 * Collect as many apples and oranges as you can.
 * Remember - don't bump into the wall!
-* Beware Machamp!
+* Beware the other Pokemon!
 
 You can play here: https://michalpawelec.github.io/Feed_Snorlax/
 

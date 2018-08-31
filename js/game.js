@@ -7,7 +7,8 @@ const Game = function() {
     const self = this;
 
     this.singleField = document.querySelectorAll('#board div');
-    this.gameBoard = document.getElementById('board')
+    this.gameBoard = document.getElementById('board');
+    this.scoreBackground = document.querySelector('#score div')
     this.snorlax = new Snorlax();
     this.orange = new Orange();
     this.apple = new Apple();
@@ -37,7 +38,7 @@ const Game = function() {
         const basePath = 'images/';
         let randomImg = imgArray[Math.floor(Math.random() * imgArray.length)];
         document.querySelector('.opponent').style.backgroundImage = "url(" + (basePath + randomImg) + ")";
-    }
+    };
 
     this.startGame = function() {
         this.idSetInterval = setInterval(function() {
@@ -48,11 +49,14 @@ const Game = function() {
     this.changeBackground = function () {
         if (this.score >= 5 && this.score < 10) {
             this.gameBoard.style.backgroundImage = "url(images/desert.png)";
+            self.scoreBackground.style.backgroundColor='#966824';
         } else if (this.score >= 10 && this.score < 20) {
             this.gameBoard.style.backgroundImage = "none";
             this.gameBoard.style.backgroundColor = "#ffa544";
+            self.scoreBackground.style.backgroundColor='#f44430';
         } else if (this.score >= 20) {
             this.gameBoard.style.backgroundColor = "#13ada3";
+            self.scoreBackground.style.backgroundColor='0084ad';
         }
     };
 
@@ -90,7 +94,7 @@ const Game = function() {
             self.idSetInterval = setInterval(function() {
                 self.moveSnorlax();
             }, 150);
-        };
+        }
     };
 
     this.turnSnorlax = function (event) {
@@ -148,8 +152,8 @@ const Game = function() {
     };
 
     this.hideVisibleOpponent = function() {
-        document.querySelector('.opponent').classList.remove('opponent')
-        this.singleField[this.index(this.opponent.x, this.opponent.y)].classList.remove('opponent');;
+        document.querySelector('.opponent').classList.remove('opponent');
+        this.singleField[this.index(this.opponent.x, this.opponent.y)].classList.remove('opponent');
     };
 
     this.gameOver = function() {

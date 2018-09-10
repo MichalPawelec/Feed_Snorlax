@@ -124,6 +124,11 @@ const Game = function() {
             this.orange = new Orange();
             this.showOrange();
 
+            this.hideVisibleOpponent();
+
+            this.opponent = new Opponent();
+            this.showOpponent();
+
             this.score++;
             this.gameSpeedUp();
             this.changeBackground();
@@ -139,6 +144,11 @@ const Game = function() {
 
             this.apple = new Apple();
             this.showApple();
+
+            this.hideVisibleOpponent();
+
+            this.opponent = new Opponent();
+            this.showOpponent();
 
             this.score++;
             this.gameSpeedUp();

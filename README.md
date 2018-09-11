@@ -1,7 +1,7 @@
 # Feed_Snorlax
 
 > Improved version of my first simple JavaScript game (Furry_Game) 
-(added random opponent, one fruit more to collect, speed of game increases and background changes after the score is getting higher)
+(added random opponent, sounds and one fruit more to collect, speed of game increases and background changes after the score is getting higher)
 
 ## How to play?
 * Use keyboard arrows to direct Snorlax.

@@ -124,10 +124,17 @@ const Game = function() {
             this.orange = new Orange();
             this.showOrange();
 
+<<<<<<< HEAD
             // this.hideVisibleOpponent();
             //
             // this.opponent = new Opponent();
             // this.showOpponent();
+=======
+            this.hideVisibleOpponent();
+
+            this.opponent = new Opponent();
+            this.showOpponent();
+>>>>>>> 15a21b7ebb5ceee7f40c1adaed29ee8969d43a5b
 
             this.score++;
             this.gameSpeedUp();
@@ -145,10 +152,17 @@ const Game = function() {
             this.apple = new Apple();
             this.showApple();
 
+<<<<<<< HEAD
             // this.hideVisibleOpponent();
             //
             // this.opponent = new Opponent();
             // this.showOpponent();
+=======
+            this.hideVisibleOpponent();
+
+            this.opponent = new Opponent();
+            this.showOpponent();
+>>>>>>> 15a21b7ebb5ceee7f40c1adaed29ee8969d43a5b
 
             this.score++;
             this.gameSpeedUp();
